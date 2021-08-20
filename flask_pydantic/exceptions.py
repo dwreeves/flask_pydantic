@@ -20,6 +20,11 @@ class JsonBodyParsingError(BaseFlaskPydanticException):
     pass
 
 
+class UnsupportedMediaType(BaseFlaskPydanticException):
+
+    pass
+
+
 class ManyModelValidationError(BaseFlaskPydanticException):
     """This exception is raised if there is a failure during validation of many
     models in an iterable"""
